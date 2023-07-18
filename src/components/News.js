@@ -76,9 +76,9 @@ export default class News extends Component {
 
             <div className="container my-4" >
                 <h2 className="text-center" style={{ margin:''}}> <p class=" "> <span style={{fontWeight: 'bold'}}>  Top Headlines</span> </p></h2>
-                {this.state.loading&& <Spinner />}
+                {this.state.loading && <Spinner />}
                 <div className="row" >
-                    {!this.state.loading&& this.state.articles.map((element) => {
+                    {!this.state.loading && this.state.articles.map((element) => {
                         return (<div className="col-md-4" key={element.url}>
                             <NewsItem title={element.title}  urlToImage={element.urlToImage} url={element.url} author={element.author} date = {element.publishedAt} source = {element.source.name}/>
                         </div>
