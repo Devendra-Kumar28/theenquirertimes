@@ -18,7 +18,7 @@ export default class News extends Component {
 
     async updateNews(){
         this.props.setProgress(1);
-        const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=0de43a9426424135815f488a23a2ebd5&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+        const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=c8139deaa757431c8445e885df774e18&page=${this.state.page}&pageSize=${this.props.pageSize}`;
         this.setState({loading:true});
        
         let data = await fetch(url);
@@ -97,7 +97,7 @@ export default class News extends Component {
         return (
 
             <div className="container my-4" >
-                <h2 className="text-center" style={{ margin:' '}}> <p class=" "> <span style={{fontWeight: 'bold'}}>  Top Headlines</span> </p></h2>
+                <h2 className="text-center" style={{fontWeight: 'bold', marginTop: '50px'}}>  <span style={{fontWeight: 'bold'}}>  Top Headlines</span> </h2>
                 {this.state.loading && <Spinner />}
                 <div className="row" >
                     {!this.state.loading && this.state.articles.map((element) => {
