@@ -5,10 +5,10 @@ export default class Navbar extends Component {
     render() {
         return (
             <div style={{ paddingTop: '0.0rem' }}>
-                <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{ paddingTop: '0rem', paddingBottom:'0rem' }} >
+                <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light" style={{ paddingTop: '0rem', paddingBottom:'0rem' }} >
                     <div className="container-fluid" style={{ backgroundImage: "linear-gradient(to right,black , #053f5c)" }}>
 
-                        <img src="dev.png" alt="" width="50" height="50" className="d-inline-block align-text-top" />
+                        <img src="Dlogo.png" alt="" width="50" height="50" className="d-inline-block align-text-top" />
                         <Link className="navbar-brand" to="/" style={{ color: 'white' , marginLeft:'10px' ,marginRight:'250px'}}><b>The Enquirer Times</b></Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>

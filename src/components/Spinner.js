@@ -4,7 +4,7 @@ export default class Spinner extends Component {
   render() {
     return (
       <div className="text-center">
-        <img src={InfinityScroll} alt="InfinityScroll"/>
+        <img src={loading} alt="loading"/>
       </div>
     )
   }
