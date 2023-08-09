@@ -10,7 +10,7 @@ import LoadingBar from 'react-top-loading-bar';
 
 
 export default class App extends Component {
-  pageSize = 9;
+  pageSize = 6;
 
 
   state = {

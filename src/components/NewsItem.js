@@ -6,7 +6,7 @@ export default class NewsItem extends Component {
     let { title, urlToImage, url, author, date,source } = this.props;
     return (
       <div className ="my-3">
-        <div className ="card" style={{ width: "18rem" }}>
+        <div className ="card" style={{ width: "20rem", marginLeft:"15px" }}>
         <span className ="position-absolute top-0  translate-middle badge rounded-pill " style={{ backgroundColor: '#DB0007' , left:'90%', zIndex:'1' }}>
               {source}
              

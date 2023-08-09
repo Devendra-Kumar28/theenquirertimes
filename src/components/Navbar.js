@@ -9,7 +9,7 @@ export default class Navbar extends Component {
                     <div className="container-fluid" style={{ backgroundImage: "linear-gradient(to right,black , #053f5c)" }}>
 
                         <img src="Dlogo.png" alt="" width="50" height="50" className="d-inline-block align-text-top" />
-                        <Link className="navbar-brand" to="/" style={{ color: 'white' , marginLeft:'10px' ,marginRight:'250px'}}><b>The Enquirer Times</b></Link>
+                        <Link className="navbar-brand" to="/general" style={{ color: 'white' , marginLeft:'10px' ,marginRight:'250px'}}><b>The Enquirer Times</b></Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
